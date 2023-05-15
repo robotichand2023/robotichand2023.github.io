@@ -1,0 +1,162 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+header{
+    height:100vh;
+    background-color: rgb(237,237,237);
+}
+.upper{
+    width:100%;
+    display:inline-block;
+    padding: 25px 80px;
+    position: relative;
+}
+.upper p{
+   float:left;
+   font-size: 1.5em;
+   font-weight:bold;
+}
+nav{
+  float:right;
+     
+}
+
+
+nav a{
+    text-decoration:none;
+    color:black;
+    /* display:inline-block; */
+}
+nav ul li{
+    
+    list-style-type:none;
+    display:inline; 
+    padding-right:5vw;
+
+}
+nav ul li button,.starter button,button{
+    padding:10px 20px;
+    background-color:white;
+    border:0;
+}
+nav a:hover{
+    color:rgb(173,173,173);
+}
+button:hover{
+    background-color:rgb(237,237,237);
+}
+
+.toggle{
+    width:35px;
+    position: absolute;
+    right:80px;
+    top:25px;
+    z-index:10;
+    display:none;
+}
+.toggle span{
+    width: 100%;
+    /* display:inline-block; */
+    height:2px;
+    background-color:black;
+    float: left;
+    margin-bottom:8px;
+}
+
+.wpic{
+    background-image: url('./images/cover1.jpg');
+    height:100vh;
+    background-size: cover;
+    background-attachment:fixed;
+    padding-left:10%;
+    padding-top:20%;
+}
+.wpic h1{
+    color:white; 
+    font-size:70px;
+    width:50%;
+    padding-bottom:20px;
+}
+footer{
+    background-color:rgb(32,32,32);
+    color:white;
+    padding:20px;
+    height:10vh;
+    text-align:center;
+    font-size:large;
+}
+.t3same img{
+    width:30vw;
+}
+.t3same>div{
+    display:flex;
+    margin:5vh 10vw 10vh;
+}
+.t3same .fort{
+    background-color: rgb(249,249,249);
+    padding:100px;
+}
+
+
+.below{
+    font-size:64px;
+    padding-top:10vh;/* padding-top:30vh; */
+    padding-left:20vw;
+}
+.flex2,.flex3{
+    display:flex;
+    /* justify-content:space-around; */
+    
+}
+
+.text h6,.fort h6{
+    color:gray;
+}
+.text h1,.fort h1{
+    font-size:64px;
+}
+.text p,.fort p{
+    padding-top:20px;
+    font-size:18px;
+    color:rgb(36, 34, 34);
+}
+
+@media only screen and (max-width: 1000px) {
+    .t3same img, .t3same .fort{
+        width:80vw;
+    }
+    .t3same>div{
+        display:flex;
+        flex-direction:column;
+    }
+    .wpic h1{
+        font-size:50px;
+    }
+   
+
+
+    .toggle{display:block;}
+    nav{
+        display:none;
+        width:100%;
+        border-top: 1px solid white;
+        padding-top:20px;
+        margin-top:30px;
+        position: absolute;
+        padding-left: 10px;
+        left: 0;
+        z-index: 10;
+    }
+    nav ul li{
+        width:100%;
+        padding:15px 0px;
+        display:inline-block; 
+        background-color: rgb(237,237,237);
+    }
+    nav.showMenu{display:block;}
+  
+   
+  }
+

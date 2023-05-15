@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="./jscript.js"></script>
+    <title>About Us</title>
+   <style>
+    header{
+        height:30vh;
+    }
+   
+    .pic2{
+        width:30vw;
+        position:relative;
+        top:-10vh;
+        right:10vw;
+      
+    }
+    .text{
+        padding:10vh 20vw 0vh 10vw;
+
+    }
+ 
+    .flex3{
+        padding: 0 10vw;
+        justify-content: space-around;
+    }
+    .flex3 div{
+        text-align:center;
+        width:30vw;
+        color:rgb(71,71,71);
+    }
+    .flex3 div h2,.flex3 div p{
+        padding:10px;
+    }
+    .forb{
+       text-align:center;
+       font-size:64px;
+       padding-bottom:100px;
+    }
+
+    .box img{
+        width:30vw;
+    }
+    .box{
+        display:flex;
+        margin:5vh 10vw 10vh;
+    }
+    .box .fort{
+        padding:100px;
+    }
+    .box p,.box ul li{
+        font-size:18px;
+        padding-bottom:2vh;
+        list-style-type: none;
+    }
+    .box ul li span,button{
+        color:gray;
+    }
+    button{
+        padding-top:20px;
+        background-color: rgb(249,249,249);
+        font-size:15px;
+    }
+    .box ul li i{
+        position:relative;
+        padding:10px 10px 20px;
+    }
+    .box ul li i::after{
+        content:'';
+        background-color:gray;
+        position:absolute;
+        bottom:0;
+        left:0;
+        height:1px;
+        width:170%;
+    }
+    .us p{
+        /* width:80vw; */
+        padding: 0 10vw;
+        margin-bottom: 10vh;
+        font-size: 120%;
+        line-height: 30px;
+        text-align:center;
+        
+    }
+    @media only screen and (max-width: 1000px) {
+        main{
+            font-size:90%;
+        }
+        .flex3 {
+            padding: 0 5vw;
+            
+        }
+      
+    }
+    @media only screen and (max-width: 800px) {
+        main{
+            font-size:80%;
+        }
+        .flex3 div{
+            width:40vw;
+          
+        }
+   
+    }
+    @media only screen and (max-width: 650px) {
+        .flex3 {
+            flex-direction: column;
+            align-items: center;
+            font-size:120%;
+        }
+        .flex3 div{
+            width:80vw;
+            margin-bottom:5vh;
+        }
+    }
+   </style>
+</head>
+<body>
+    <header>
+        <div class="upper">
+            <div class="toggle" onclick="toggleMenu();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>Capstone</p>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="below">Meet Us</h1>
+    
+      
+    </header>
+    <main>
+        <br><br>
+        <h1 class="forb">Our Team</h1>
+        <div class="flex3">
+            <div>
+                <img src="./images/tatia.jpg" width="100%">
+                <h2>Tatia Salukvadze</h2>
+                <p>Computer Engineer; Contact info: <a href=mailto:“tatiasaluqvadze86@gmail.com”>tatiasaluqvadze86@gmail.com</a> </p>
+
+            </div>
+            <div>
+                <img src="./images/misho.jpg" width="100%">
+                <h2>Mikheil Kvizhinadze</h2>
+                <p>Electrical Engineer; Contact info: <a href=mailto:“mikheilkvizhinadze@gmail.com”>mikheilkvizhinadze@gmail.com</a> </p>
+
+            </div>
+            <div>
+                <img src="./images/keti.jpg" width="100%">
+                <h2>Ketevan Kutchava</h2>
+                <p>Computer Engineer; Contact info: <a href=mailto:“kutchava2@gmail.com”>kutchava2@gmail.com</a> </p>
+
+            </div>
+        </div>
+        <div class="us">
+            <br><br><br>
+            <h1 class="forb">About Us</h1>
+            <p>We are a group of senior students from SDSUG, embarking on a capstone project in the field of 
+                robotics engineering. Our team has dedicated the past four months to developing a human-controlled 
+                robotic hand under the mentorship of Giorgi Veshapidze, with the guidance and support of instructors 
+                Davit Chxaidze and Archil Gvimradze. This project represents the culmination of our academic journey, 
+                applying the knowledge and skills acquired throughout our studies to tackle a real-world engineering 
+                challenge. Collaboration and teamwork have been essential to our project's success. Each team 
+                member brought their unique skills and expertise to the table, allowing us to tackle complex 
+                challenges from multiple perspectives. We have fostered a supportive and inclusive environment,
+                 encouraging open communication and idea sharing. This collaborative spirit has been instrumental 
+                 in overcoming obstacles and achieving our project milestones.</p></div>
+      
+        <div class="wpic">
+            <h1>Robotic Hand 2023 - Capstone Project</h1>
+            
+        </div>
+    </main>
+    <footer>
+        <p> 2023 by Robotic Hand Group | San Diego State University Georgia</p>
+    </footer>
+    
+</body>
+</html>

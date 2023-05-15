@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- access jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- for slideshow -->
+    <!-- access the CSS needed by the fotorama plugin -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <!-- fotorama library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <script type="text/javascript" src="./jscript.js"></script>
+
+    <title>Robotic Hand</title>
+   <style>
+ 
+    .starter{
+        width:100vw;
+        position:relative;
+        top:5vw;
+        padding:0vh 15vw;
+        display:flex;
+    }
+    .starter div p{
+        padding:10px;
+    }
+    .starter h1{
+        width:30vw;
+        font-size:64px;
+        
+    }
+    .starter img{
+        width:38vw;
+        margin-left:5vw;
+    }
+   
+  
+    .text{
+        text-align:justify;
+        padding:30px;
+        margin: 5vh 17vw;
+    
+    }
+    .text p{
+        font-size: 120%;
+        line-height: 30px;
+    }
+
+
+   @media only screen and (max-width: 1000px) {
+        .starter{
+            padding: 5vh 5vw;
+        }
+        .text{
+            margin: 5vh 10vw;
+        }
+        .starter h1{
+            font-size:45px;     
+            width: 60vw;
+            
+        }
+        .starter div{
+            text-align: center;
+        }
+        .starter img{
+          
+            width: 40vw;
+        }
+        .starter {
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        .pic2{
+          
+            height: 50vh;
+            
+        }
+        main iframe{
+            height: 350px;
+        }
+
+}
+   </style>
+</head>
+<body>
+    <header>
+        <div class="upper">
+            <div class="toggle" onclick="toggleMenu();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>Capstone</p>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                 
+                </ul>
+            </nav>
+        </div>
+        <div class="fotorama" data-autoplay="true"   data-width="100%" data-height="95%">
+            <div class="starter">
+                <div>
+                <h1>Human controlled Robotic hand</h1>
+                <p>robotic hand imitates human hand movements. 
+                    The robotic hand uses motors to flex/unflex robotic fingers</p>
+               
+                </div>
+                <img src="./images/slide3.png">
+            </div>
+            <div class="starter">
+                <div>
+                <h1>Human Hand Side</h1>
+                <p>Glove on the actual hand, which is equipped with bending sensors</p>
+                
+                </div>
+                <img src="./images/slide2.png">
+            </div>
+            
+        </div>
+      
+    </header>
+    <main>
+            <br>
+            <div class='text'>
+                <h6>P r o j e c t &nbsp; D e s c r i p t i o n —</h6><br>
+                <h1>Robotic Hand</h1>
+                <h2>Introduction</h2>
+                <p>The development of robotic hands that imitate human hand movements is a useful technological achievement that has the potential to improve the lives of human beings and become an important part of various industries, such as  prosthetics,manufacturing, chemical industry, etc. with further development of this device, it can improve safety and provide greater efficiency, enhance our ability to interact with the environment and perform tasks with greater ease and accuracy.
+
+                   </p><p> One of the primary applications of such robotic hands is in the field of prosthetics. This project will help people with disabilities to interact with the environment using these devices. With future development of this project, individuals with amputations will be able to  perform a wide range of tasks, such as grasping objects, typing, and even playing musical instruments. This can improve their quality of life and offer greater independence.
+                    
+                  </p> <p> Chemical industry is another field which can benefit from the application of robotic hands. It is known that in this industry, people constantly interact with dangerous and hazardous substances that cause significant health risks, accidents and injuries. With the use of robotic hands, the risks are reduced considerably since robotic hands can handle such materials without the need of direct human  interaction. Additionally, these robotic hands have potential to be used to handle chemicals in environments that are difficult or impossible for humans to access, such as confined spaces, high-temperature areas, or areas with high radiation levels. Thus, the project is a step forward in  further enhancing safety and reducing the risk of human exposure to hazardous substances.
+                    
+                    </p><p>Overall, using robotic hands in a variety of sectors has several advantages, such as better safety, less danger of exposure to harmful materials, and improved efficiency and precision while handling these materials. These tools have the potential to transform the way we work and interact with the environment, enhancing independence and quality of life for those who have had amputations and lowering the risk of disease and injury for those who work in sectors like manufacturing and chemical production.
+                    </p><br>
+                <h2>Body</h2>
+                <p>The aim of this project was to create a robotic hand which imitates human hand movements. Visually, you can see the scheme on figure 1. We use a glove equipped with bending sensors. The glove is worn on the actual hand, and the sensors are placed on top of each finger. These sensors are actually variable resistors, which can be detected by the voltage change using ADC pins and afterwards this information is transmitted to the ESP32 board for the processing.The ESP32 board is a microcontroller that processes the information received from the sensors. It is responsible for interpreting the sensor data and acting as a server, listening to the incoming requests from the second ESP32 board and sending corresponding data.
+                   </p><p> The second ESP32 board is responsible for controlling the robotic hand. It sends HTTP GET requests to the server and uses the data received to calculate the angle values required for the robotic fingers to bend or unflex. These angle values are then sent to five servo motors placed in the robotic hand. The servo motors are responsible for moving the fingers of the robotic hand to match the movements of the human hand.
+                  </p><p>In our project, we have utilized various components such as flex sensors, a glove, ESP32 boards, servo motors, and a robotic hand, as depicted in Figure 1. Notably, we have made the flex sensors by employing velostat material.Furthermore,  we bought and assembled a 3D printer, followed by the printing of the necessary robotic hand parts.Subsequently, we have meticulously assembled the various parts to construct the robotic hand.
+                    </p>
+                    <img src="./images/schema.png" width="100%">
+                    <iframe width="100%" height="400"
+                    src="https://www.youtube.com/embed/Z-ulXbrTIaU">
+                    </iframe>
+                    <!-- https://www.youtube.com/embed/tgbNymZ7vqY -->
+                </div>
+     
+        
+       
+        </div>
+        <div class="wpic">
+            <h1>Robotic Hand 2023 - Capstone Project</h1>
+            
+        </div>
+    </main>
+    <footer>
+        <p> 2023 by Robotic Hand Group | San Diego State University Georgia</p>
+    </footer>
+
+</body>
+</html>

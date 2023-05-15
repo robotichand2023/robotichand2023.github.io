@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./jscript.js"></script>
+
+    <title>Gallery</title>
+    <style>
+         header{
+        height:30vh;
+    }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+   </style>
+</head>
+<body>
+    <header>
+        <div class="upper">
+            <div class="toggle" onclick="toggleMenu();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>Capstone</p>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="below">Gallery</h1>
+        
+      
+    </header>
+    <main>
+        <br> <br>
+        <div class="row"> 
+            <div class="column">
+              <img src="./images/gal1.jpg" style="width:100%">
+              <img src="./images/gal5.jpg" style="width:100%">
+              <img src="./images/gal9.png" style="width:100%">
+             
+            </div>
+            
+            <div class="column">
+               
+                <img src="./images/gal2.jpg" style="width:100%">
+                <img src="./images/gal6.jpg" style="width:100%">
+                <img src="./images/gal10.png" style="width:100%">
+              
+            </div> 
+             
+            <div class="column">
+                
+                <img src="./images/gal3.jpg" style="width:100%">
+                <img src="./images/gal7.png" style="width:100%">
+                <img src="./images/slide2.png" style="width:100%">
+            </div>
+            
+            <div class="column">
+                <img src="./images/gal4.jpg" style="width:100%">
+                <img src="./images/gal8.png" style="width:100%">
+            </div>
+          </div>
+          <br>
+          <div class="wpic">
+            <h1>Robotic Hand 2023 - Capstone Project</h1>
+            
+        </div>
+    </main>
+    <footer>
+        <p> 2023 by Robotic Hand Group | San Diego State University Georgia</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="./jscript.js"></script>
+    <title>Components</title>
+    <style>
+        header{
+            height:30vh;
+        }
+        .pic2{
+            width:30vw;
+            position:relative;
+            top:-10vh;
+            right:10vw;
+        }
+        .text{
+            padding:10vh 20vw 0vh 10vw;
+
+        }
+        .grid{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            margin:10vw;
+            gap: 5vw;
+            text-align:center;
+        }
+        .grid div p,.grid div h2{
+            padding-top:20px;
+        }
+        @media only screen and (max-width: 1150px) {
+      
+            .t3same .fort{
+        
+                padding: 50px;
+            }
+        }
+   </style>
+</head>
+<body>
+    <header>
+        <div class="upper">
+            <div class="toggle" onclick="toggleMenu();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>Capstone</p>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+               
+                </ul>
+            </nav>
+        </div>
+        <h1 class="below">Components</h1>
+    
+      
+    </header>
+    <main>
+       <br><br>
+        <div class="t3same">
+            <div class="box1">
+                <div class="fort">
+                    <h6>0 1 —</h6>
+                    <h1>ESP32 Board</h1>
+                    <p>We use an ESP32 Board (SoC) since it supports peripherals such as ADC and PWM. We
+                        feed analogue signals from the flex sensors to the GPIO pins and use an ADC chip to 
+                        read varying voltages. These values then are assigned to corresponding digital 
+                        values between 0 to 4095. Then we adjust these to appropriate degree values and 
+                        send them with the PWM signal to the servo motors.
+                    </p>
+                </div>
+                <img src="./images/esp32.png">
+            </div>
+            <div class="box2">
+                <img src="./images/servo.png">
+                <div class="fort">
+                    <h6>0 2 —</h6>
+                    <h1>Servo Motors</h1>
+                    <p>Servo motor is an electrical device that operates using a PWM signal. It has signal, 
+                        Vcc, and GND pins and provides precision rotation over 180 degrees.  By providing a 
+                        PWM signal at a specific frequency, the duty cycle (the ratio of high time over the 
+                        total cycle time) determines the position of the servo's axis. We use 5 servo motors 
+                        to control the motion of the robotic hand fingers’ flexing. 
+                    </p>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="fort">
+                    <h6>0 3 —</h6>
+                    <h1>Flex Sensors</h1>
+                    <p>Flex sensor plays the role of variable resistance using carbon on plastic sticks. It is
+                         also called a bend sensor as the value of resistance varies with the bending of the 
+                         sensor. This proportionality makes the flex sensor act like a potentiometer. We 
+                         attach them to a glove so that every finger flexing would change individual sensor 
+                         resistance. Then we read the analogue voltage using ADC.
+                    </p>
+                </div>
+                <img src="./images/flex.png">
+            </div>
+            <div class="box2">
+                <img src="./images/hand.png">
+                <div class="fort">
+                    <h6>0 4 —</h6>
+                    <h1>Printed Robotic Hand</h1>
+                    <p>We use a 3D-printed robotic hand. We Bought 3D printer and printed 40 parts 
+                        of the hand by ourselves. The robotic hand consists of fingers, calves, a wrist and 
+                        the part of the hand to fit five servo motors. Each servo motor is connected with each 
+                        finger by threads. 
+                    </p>
+                 </div>
+            </div>
+            <div class="box1">
+                <div class="fort">
+                    <h6>0 5 —</h6>
+                    <h1>Power Supply</h1>
+                    <p>This power supply  is compact and reliably provides 5.0V output with a 
+                        maximum current of 8.0 Amps (total 40W of power). This level of power is suitable 
+                        for our project since we are using five MG996R servo motors. Each consumes up to 1.5 
+                        Amps (under load), therefore total current consumption would not be up to 8.0 Amps.
+                    </p>
+                </div>
+                <img src="./images/psupply.png">
+            </div>
+            <div class="box2">
+                <img src="./images/pbank.png">
+                <div class="fort">
+                    <h6>0 6 —</h6>
+                    <h1>Power Bank</h1>
+                    <p>We used a Power bank in order to power the ESP32 board. Xiaomi Redmi Portable Power 
+                        Bank provides extended use (10000mAh) of the board without the need for a wired power 
+                        connection. It is compact and lightweight. Moreover, it has built-in USB output which 
+                        allows easy recharging.
+
+                    </p>
+                 </div>
+            </div>
+        </div>
+        <div class="wpic">
+            <h1>Robotic Hand 2023 - Capstone Project</h1>
+            
+        </div>
+    </main>
+    <footer>
+        <p> 2023 by Robotic Hand Group | San Diego State University Georgia</p>
+    </footer>
+    
+</body>
+</html>
