@@ -160,3 +160,11 @@ footer{
    
   }
 
+  @media only screen and (max-width: 1000px) {
+      
+    .below{
+
+      font-size:45px;
+    }
+}
+
